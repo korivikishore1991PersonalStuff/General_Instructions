@@ -1,0 +1,59 @@
+Bascis:-
+VM_enablement: enable VM_Component in BIOS when Booting for VM-Box to wrok.
+VM_SHared Floder: General->Advanced->Biderectional->Shared Floder->Floder-> Auto mounth
+                  sudo usermod -a -G Vboxsf <username Make Permanent>
+                  home/media/Sf_floder
+VM_Network: Adapter2-Host-onlyAdapter
+            PromiscuousMode -Deny
+
+            
+CDH Versions:-(minimum version for spark script running in Python is Python 2.6)
+hadoop version:: hive --version:: Sqoop version:: Spark-shell version:: sc.version:: Python -V:: javac:: hive-site.xml(/etc/hive/conf/hive-site.xml)
+
+Spark COmponents:-
+spark-shell, pyspark
+sparkcontext:: sqlcontext:: hivecontext:: spark-sql[avaible from 1.5.2]:: JDBC
+to access HiveContext:
+sudo ln -s /etc/hive/conf/hive-site.xml \
+           /etc/spark/conf/hive-site.xml
+spark-shell
+sqlcontext.sql("select * from Table_name").collect().foreach(println)
+
+Starting Cloudera Maneger:-
+udo /home/cloudera/cloudera-manager --express --force
+
+Removing files with out prompting recursively:-
+rm -rf /directory/path
+
+IDE Set-up:-
+check: CMD(javac:: JDK)
+Download JDK from Oracle.
+Path:- c:\Program_File\java\jdks\(add path by using';')
+eclipse-> project -> properties -> Java Build Path libraries -> JRE system library -> installed JRES -> add -> standrad VM -> c:\ProgramFiles\java\jdk8
+
+Running Python Shell from CMD:-
+c:\Python34\python.exe c:\user\sg0952655\desktop\new.py arg1 arg2 arg3
+
+Running Java application:
+javac ExampleProgram.java
+java ExampleProgram
+
+Using Putty from local host:
+ifconfig -a (to get IP adress)
+ssh cloudera@IP_adress (to connect to Hadoop cluster)
+scp dectofcards.txt cloudera@192.168.90.131:/home/cloudera (to copy files to hadoop)
+access Hue: IP_adress:8888 (192.168.90.131:8888)
+access NameNode: IP_adress:50070 (192.168.90.131:50070)
+
+To find the cloudera Repositories for dependencies:
+find /opt -name "*hadoop*.jar"
+(or for a VM based version)
+find /usr -name "*hadoop*.jar"
+find /usr -name "*hadoop-mapreduce_client-common*.jar"
+
+To Check the jar content:
+jar tvf jar/location/jars.jar
+
+To connect to mysql using Tools in Coludera_VM:
+mysql -u retail_dba -P
+password: cloudera
