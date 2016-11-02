@@ -10,7 +10,7 @@ VM_Network: Adapter2-Host-onlyAdapter
 CDH Versions:-(minimum version for spark script running in Python is Python 2.6)
 hadoop version:: hive --version:: Sqoop version:: Spark-shell version:: sc.version:: Python -V:: javac:: hive-site.xml(/etc/hive/conf/hive-site.xml)
 Spark is written in Scala
-Hine and Map/Reduce is written in Java
+Hive and Map/Reduce is written in Java
 Impala is written in c++.
 
 Spark COmponents:-
