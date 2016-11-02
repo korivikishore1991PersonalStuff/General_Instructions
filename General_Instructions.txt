@@ -12,6 +12,9 @@ hadoop version:: hive --version:: Sqoop version:: Spark-shell version:: sc.versi
 Spark is written in Scala
 Hive and Map/Reduce is written in Java
 Impala is written in c++.
+Python is a dynamic(cann't be complied to jar) and functional programing laguage.
+Scala is a static yet dynamic-looking and a mix between functional and object-oriented language.
+Java is an static and object-oriented programing languague.
 
 Spark COmponents:-
 spark-shell, pyspark
