@@ -2,7 +2,8 @@ Bascis:-
 VM_enablement: enable VM_Component in BIOS when Booting for VM-Box to wrok.
 Install VM_box extensions
 VM_SHared Floder: General->Advanced->Biderectional->Shared Floder->Floder-> Auto mounth
-                  sudo usermod -a -G Vboxsf <username Make Permanent>
+                  sudo gpasswd -a <username> vboxsf
+                  sudo reboot
                   home/media/Sf_floder
 VM_Network: Adapter2-Host-onlyAdapter
             PromiscuousMode -Deny
