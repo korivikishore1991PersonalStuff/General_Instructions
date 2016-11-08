@@ -5,7 +5,7 @@ VM_SHared Floder: General->Advanced->Biderectional->Shared Floder->Floder-> Auto
                   sudo gpasswd -a <username> vboxsf
                   sudo reboot
                   home/media/Sf_floder
-VM_Network: Adapter2-Host-onlyAdapter
+VM_Network(for connecting to putty and fillazilla): Adapter2-Host-onlyAdapter
             PromiscuousMode -Deny
 for additioal information on trouble shooting please look at
 http://www.oracle.com/technetwork/database/bigdata-appliance/bigdatalite-quickdeploy-460-3301260.pdf
