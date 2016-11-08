@@ -7,6 +7,12 @@ VM_Network: Adapter2-Host-onlyAdapter
             PromiscuousMode -Deny
 for additioal information on trouble shooting please look at
 http://www.oracle.com/technetwork/database/bigdata-appliance/bigdatalite-quickdeploy-460-3301260.pdf
+
+Installing JAVA:
+Install JDK
+check JAVA_HOME, PATH and CLASSPATH variables in system_variables for previous versions.
+Update bin's of JRE and JDK in PATH:: Update JAVA_HOME to JDK in C-Drive:: Update bin's of JRE and JDK in CLASSPATH with ;. at the end.
+Check using echo %path%:: echo %JAVA_HOME%:: javac
             
 CDH Versions:-(minimum version for spark script running in Python is Python 2.6)
 hadoop version:: hive --version:: Sqoop version:: Spark-shell version:: sc.version:: Python -V:: java -version:: javac:: hive-site.xml(/etc/hive/conf/hive-site.xml)
