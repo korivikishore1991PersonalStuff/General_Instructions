@@ -41,6 +41,7 @@ Removing files with out prompting recursively:-
 rm -rf /directory/path
 
 IDE Set-up:-
+To findout system version in Linux based systems use "uname -i" command.
 check: CMD(javac:: JDK)
 Download JDK from Oracle.
 Path:- c:\Program_File\java\jdks\(add path by using';')
