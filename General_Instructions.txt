@@ -46,6 +46,7 @@ check: CMD(javac:: JDK)
 Download JDK from Oracle.
 Path:- c:\Program_File\java\jdks\(add path by using';')
 eclipse-> project -> properties -> Java Build Path libraries -> JRE system library -> installed JRES -> add -> standrad VM -> c:\ProgramFiles\java\jdk8
+Maven setup: help->install new software->Check for Available Software->Copy m2e releases repository link->Browse for it in Available Softwares tab->Next
 
 Running Python Shell from CMD:-
 c:\Python34\python.exe c:\user\sg0952655\desktop\new.py arg1 arg2 arg3
