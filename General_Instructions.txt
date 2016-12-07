@@ -35,7 +35,7 @@ spark-shell
 sqlcontext.sql("select * from Table_name").collect().foreach(println)
 
 Starting Cloudera Maneger:-
-udo /home/cloudera/cloudera-manager --express --force
+sudo /home/cloudera/cloudera-manager --express --force
 
 Removing files with out prompting recursively:-
 rm -rf /directory/path
