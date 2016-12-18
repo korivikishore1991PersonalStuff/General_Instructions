@@ -5,6 +5,7 @@ VM_SHared Floder: General->Advanced->Biderectional->Shared Floder->Floder-> Auto
                   sudo gpasswd -a <username> vboxsf
                   sudo reboot
                   home/media/Sf_floder
+                  sudo ln -s /media/sf_Shared_VM_Floder /home/cloudera/Desktop/testsf (to create a softlink to Shared folder)
 VM_Network(for connecting to putty and fillazilla): Adapter2-Host-onlyAdapter
             PromiscuousMode -Deny
 for additioal information on trouble shooting please look at
