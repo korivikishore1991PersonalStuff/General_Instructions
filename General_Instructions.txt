@@ -57,11 +57,17 @@ javac ExampleProgram.java
 java ExampleProgram
 
 Using Putty from local host:
+For CDH:-
 ifconfig -a (to get IP adress)
 ssh cloudera@IP_adress (to connect to Hadoop cluster)
 scp dectofcards.txt cloudera@192.168.90.131:/home/cloudera (to copy files to hadoop)
 access Hue: IP_adress:8888 (192.168.90.131:8888)
 access NameNode: IP_adress:50070 (192.168.90.131:50070)
+For HDP:-
+ifconfig -a (to get IP adress)
+ssh root@127.0.0.1 2222(to connect to Hadoop cluster)
+access HDP UI: 127.0.0.1:8888 (IP_adress:8888)
+access Ambari: 127.0.0.1:8080 (IP_adress:8080)
 
 To find the cloudera Repositories for dependencies:
 find /opt -name "*hadoop*.jar"
