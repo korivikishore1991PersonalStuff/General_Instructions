@@ -75,6 +75,13 @@ find /opt -name "*hadoop*.jar"
 find /usr -name "*hadoop*.jar"
 find /usr -name "*hadoop-mapreduce_client-common*.jar"
 
+To check the HortonWorks cluster for ambari and HDP version:
+ambari: rpm -qa |grep ambari-server
+        rpm -qa |grep ambari-agent
+HDP: hdp-select | grep hadoop-client
+     hdp-select versions
+     hdp-select status
+
 To Check the jar content:
 jar tvf jar/location/jars.jar
 
