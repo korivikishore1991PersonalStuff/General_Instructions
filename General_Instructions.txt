@@ -66,7 +66,8 @@ access NameNode: IP_adress:50070 (192.168.90.131:50070)
 (OR)  
 The CDH VM box also offer port forwarding on port 22  
 The VM box can be routed for ssh operations on port 22 by going to Network->Adapter 1(NAT)->Port Forwarding  
-
+Add Port has Name-> ssh;Protocol-> TCP;Host IP-> 22;Host Port-> ;Guest IP-> ;Guest Port->22      
+  
 For HDP:-
 ifconfig -a (to get IP adress)
 ssh root@127.0.0.1 2222(to connect to Hadoop cluster)
