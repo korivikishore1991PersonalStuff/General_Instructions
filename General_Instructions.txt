@@ -48,6 +48,11 @@ Download JDK from Oracle.
 Path:- c:\Program_File\java\jdks\(add path by using';')
 eclipse-> windows -> preferences -> Java -> installed JRES -> add -> standrad VM -> c:\ProgramFiles\java\jdk8
 Maven setup: help->install new software->Check for Available Software->Copy m2e releases repository link->Browse for it in Available Softwares tab->Next
+Intellij IDE tuning:
+Intellij IDE Add Scala Plugin:
+StartUp Screen -> Configure -> Plugins -> Browse repositiries -> Search for "Scala" -> install
+Intellij IDE Associate local JDK with IDE:
+StartUp Screen -> Configure -> Project Defaults -> Project Settings -> Project -> Select "SDK" using "New" like "c:\Program Files\Java\jdk1.8.0" -> Apply -> OK
 
 Running Python Shell from CMD:-
 c:\Python34\python.exe c:\user\sg0952655\desktop\new.py arg1 arg2 arg3
